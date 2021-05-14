@@ -1,6 +1,6 @@
 # Описание класса Professor
     
-Класс Professor является потомком класса [User](GIT+MD/User.md) .
+Класс Professor является потомком класса [User](Git+MD/User.md) .
 
 ## Атрибуты
 
