@@ -1,19 +1,11 @@
-# Описание класса Person
-    
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+## Описание интерфейса IOffice
 
-## Атрибуты
+Интерфейс предназначен для работы с методами класса [Office](Office.md)
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+### Реализация интерфейса
 
-## Описание атрибутов
-
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ADD(OFFICE:[Office](Office.md)) :INT - Функция позволяет Добавить новый кабинет
+- +DEL(ID:INT)  : INT - Функция позволяет Удалить новый кабинет
+- +SAVE (OFFICE:[Office](Office.md)) :INT - Функция позволяет сохранить изменения в кабинете
+- +GET_SCHEDULE(ID:INT,TIME_START:DATETIME,TIME_END:DATETIME):LIST<[CLASS](Class.md)> - функция позволяет получить расписание данного кабинета
+- +FIND(SORT:STRING,ASKORDESK:STRINGID:INT,CAPACITY:INT,STATE:BOOL,NAME:STRING,PAGE:INT,COUNT:INT);LIST<[Office](Office.md)> - Функция Фильтрует ищет сортирует
