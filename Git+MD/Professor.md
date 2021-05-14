@@ -1,19 +1,21 @@
-# Описание класса Person
+# Описание класса Professor
     
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+Класс Professor является потомком класса [User](GIT+MD/User.md) .
 
 ## Атрибуты
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+- +FIO:   STRING
+- +ID: INT
+- +PHONE: STRING
+- +PASSWORD: STRING
+- +SEX_MALE: BOOL
+- +DATE_ADD:DATETIME
 
 ## Описание атрибутов
 
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +FIO:   STRING - Фамилия Имя Отчество
+- +ID: INT - Индефикатор в БД
+- +PHONE: STRING - Номер телефона
+- +PASSWORD: STRING - Пароль
+- +SEX_MALE: BOOL - Пол 
+- +DATE_ADD:DATETIME - Дата добавления пользователя в бд
