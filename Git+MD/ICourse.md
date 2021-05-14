@@ -1,19 +1,12 @@
-# Описание класса Person
-    
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+## Описание интерфейса ICourse
 
-## Атрибуты
+Интерфейс предназначен для работы с методами класса [Course](Course.md)
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+### Реализация интерфейса
 
-## Описание атрибутов
-
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ADD(COURSE:[Course](Course.md)) :INT - функция позволяет добавить новый курс
+- +DEL(ID:INT)  : INT - функция позволяет удалить курс
+- +SAVE (COURSE:[Course](Course.md)) :INT - функция позволяет сохранить изменения
+- +GET_STUDETS(ID:INT,):LIST<[STUDENT](Student.md)> - функция позволяет получить студентов курса
+- +GET_ALL_CLASS(ID:INT,TIME_START:DATETIME,TIME_END:DATETIME):LIST<[CLASS](Class.md)> - функция позволяет получить все занятия курса
+- +FIND(SORT:STRING,ASKORDESK:STRING NAME:STRING,COST:MONEY,DURATION:INT,PROFESSOR:[PROFESSOR](Professor.md),ID:INT,PAGE:INT,COUNT:INT)LIST<[Course](Course.md)> - фунция фильтрует ищет сортирует 
