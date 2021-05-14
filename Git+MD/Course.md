@@ -1,19 +1,23 @@
-# Описание класса Person
+# Описание класса Course
     
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+
 
 ## Атрибуты
-
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+ 
+- +NAME: STRING
+- +COST: MONEY 
+- +DURATION: INT
+- +PROFESSOR:[PROFESSOR](Professor.md)
+- +ID:INT
+- +STATUS:BOOL
+- +DATE_ADD:DATETIME
 
 ## Описание атрибутов
 
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +NAME: STRING - Название курса
+- +COST: MONEY - цена курса
+- +DURATION: INT - Длительность курса
+- +PROFESSOR:[PROFESSOR](Professor.md) - Профессор ведущий курс
+- +ID:INT - индификатор для БД
+- +STATUS:BOOL - Статус курса (Идет/окончен)
+- +DATE_ADD:DATETIME - Время добавления 
