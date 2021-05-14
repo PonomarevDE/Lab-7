@@ -1,19 +1,11 @@
-# Описание класса Person
-    
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+## Описание интерфейса IContract
 
-## Атрибуты
+Интерфейс предназначен для работы с методами класса [Contract](Contract.md)
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
-
-## Описание атрибутов
-
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+### Реализация интерфейса
+- +ADD(CONTRACT:[Contract](Contract.md)) :INT
+- +DEL(ID:INT)  : INT
+- +SAVE (CONTRACT:[Contract](Contract.md)) :INT
+- +PAY(ID:INT,PAYMENT:MONEY):MONEY
+- +GET_PAYMENT_LIST(ID:INT,TIME:DATETIME,SUM:MONEY,CONTRACT:[Contract](Contract.md)):LIST<PAYMENT>
+- +FIND(SORT:STRING,ASKORDESK:STRING,STUDENT:[STUDENT](Student.md),COURSE:[COURSE](Course.md),ID:INT,COST:MONEY,DEBT:MONEY, DATE:DATETIME,PAYMENT:[PAYMENT](Payment.md),PAGE:INT,COUNT:INT)LIST<[Contract](Contract.md)>
