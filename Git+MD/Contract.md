@@ -1,19 +1,21 @@
-# Описание класса Person
+# Описание класса Contract
     
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+
 
 ## Атрибуты
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+- +ID: INT
+- +COST: MONEY
+- +COURSE:[COURSE](Course.md)
+- +STUDENT:[STUDENT](Student.md)
+- +DATE:DATETIME
+- +DATE_ADD:DATETIME
 
 ## Описание атрибутов
 
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ID: INT - Индификатор для БД
+- +COST: MONEY - Цена
+- +COURSE:[COURSE](Course.md) - Курс на который заключается контракт
+- +STUDENT:[STUDENT](Student.md) - Студент который заключает контракт
+- +DATE:DATETIME - Дата заключения контракта 
+- +DATE_ADD:DATETIME - Дата добавления 
