@@ -5,7 +5,7 @@
 - [IProfessor]()
 - [IManager]()
 - [IStudent]()
-- [ICountract]()
+- [IContract]()
 - [ICourse]()
 - [IClass]()
 - [IOffice]()
