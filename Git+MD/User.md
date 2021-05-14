@@ -1,8 +1,8 @@
 # Описание класса User
  ### Потомки 
- - [Professor](GIT+MD/Professor.md)
- - [Manager](GIT+MD/Manager.md)
- - [Student](GIT+MD/Student.md)
+ - [Professor](Professor.md)
+ - [Manager](Manager.md)
+ - [Student](Student.md)
 
 
 ## Атрибуты
