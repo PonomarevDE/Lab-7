@@ -1,19 +1,19 @@
-# Описание класса Person
+# Описание класса Payment
     
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+
 
 ## Атрибуты
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+- +ID:INT
+- +SUM: MONEY
+- +TIME: DATETIME
+- +CONTRACT:[CONTRACT](Contract.md)
+- +DATE_ADD:DATETIME
 
 ## Описание атрибутов
 
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ID:INT - Индефикатор для БД
+- +SUM: MONEY - Сумма оплаты
+- +TIME: DATETIME - Время оплаты
+- +CONTRACT:[CONTRACT](Contract.md) - Договор по которому происходит оплата
+- +DATE_ADD:DATETIME - Дата добавляения 
