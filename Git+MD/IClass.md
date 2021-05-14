@@ -1,19 +1,10 @@
-# Описание класса Person
-    
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+## Описание интерфейса IClass
 
-## Атрибуты
+Интерфейс предназначен для работы с методами класса [Class](Class.md)
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+### Реализация интерфейса
 
-## Описание атрибутов
-
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ADD(CLASS:[Class](Class.md)) :INT - Добавить новое занятие
+- +DEL(ID:INT)  : INT - Удалить занятие
+- +SAVE (CLASS:[Class](Class.md)) :INT - Сохранить изменение в занятии 
+- +FIND(SORT:STRING,ASKORDESK:STRING,PROFESSOR:[PROFESSOR](Professor.md),TIME:DATETIME,OFFICE:[OFFICE](Office.md),ID:INT,COURSE:[COURSE](Course.md),PAGE:INT,COUNT:INT):LIST<[Class](Class.md)> - Функция фильтрует сортирует ищет
