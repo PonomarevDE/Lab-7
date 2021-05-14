@@ -1,19 +1,10 @@
-# Описание класса Person
-    
-Класс Person является предком классов [Worker](./Worker.md "Класс Worker"),[Parent](./Parent.md "Класс Parent") и [Student](./Student.md "Класс Student") .
+## Описание интерфейса IPayment
 
-## Атрибуты
+Интерфейс предназначен для работы с методами класса [Payment](Payment.md)
 
-* ID: Int
-* FIO: String
-* Phone: String
-* EditDate: DateTime
-* DelDate: DateTime
+### Реализация интерфейса
 
-## Описание атрибутов
-
-* ID: Int - идентификатор в БД
-* FIO: String - Фамилия Имя Отчество
-* Phone: String - контактный телефон 
-* EditDate: DateTime - дата редактирования данных в БД
-* DelDate: DateTime - дата удаления данных из БД
+- +ADD(PAYMENT:[Payment](Payment.md)) :INT - Функция позволяет добавить оплату
+- +DEL(ID:INT)  : INT - функция позволяет удалить оплату
+- +SAVE (PAYMENT:[Payment](Payment.md)) :INT - Функция позволяет сохранить изменения в оплате
+- +FIND(SORT:STRING,ASKORDESK:STRING,ID:INT,SUM:MONEY,TIME:DATETIME,CONTRACT:[Contract](Contract.md),PAGE:INT,COUNT:INT)LIST<[Payment](Payment.md)> - функция фильтрует ищет сортирует 
